@@ -1,7 +1,7 @@
 /*
  * Sketch for Arduino Nano 3.0 (CH340 - China) and board STM32F103C8T6 (Blue Pill)
  *
- * mt7530.ino: VLAN switch setup based on EcoNet/Mediatek MT7530D chip.
+ * mt7530d.ino: VLAN switch setup based on EcoNet/Mediatek MT7530D chip.
  *
  * Copyright (C) 2017 McMCC <mcmcc_at_mail_ru>
  *
