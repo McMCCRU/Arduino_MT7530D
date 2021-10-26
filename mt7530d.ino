@@ -241,7 +241,7 @@ static EEPROMClass_EMU EEPROM_EMU;
 
 #endif /* End support board */
 
-#define VERFW					"v.1.0.03_MT7530DU"
+#define VERFW					"v.1.0.04_MT7530DU"
 #define MAGIC_EEPROM_START			0x7530
 
 #define MAX_VLAN_GROUP				8
@@ -1060,8 +1060,8 @@ void loop()
 				{
 					Serial.println(F("\nTagged ports group set (y/n):"));
 					mask = input_ports_mask();
-					EEPROM_update(4, mask);
 					check_magic(1);
+					EEPROM_update(4, mask);
 					Serial.println(F("Save configuration OK!"));
 					break;
 				}
@@ -1069,8 +1069,8 @@ void loop()
 				{
 					Serial.println(F("\nUnTagged ports group set (y/n):"));
 					mask = input_ports_mask();
-					EEPROM_update(3, mask);
 					check_magic(1);
+					EEPROM_update(3, mask);
 					Serial.println(F("Save configuration OK!"));
 					break;
 				}
